@@ -70,7 +70,7 @@
 // console.log(RandomNumberIsString);
 
 //********************* Operations ***********************
-   
+
 let value = 3
 let negvalue = -value
 // console.log(value);
@@ -85,15 +85,33 @@ let negvalue = -value
 // console.log(10/5);
 // console.log(10%3);
 
-//Way to add string.
-// let str1 = "Christ"
-// let str2 = " is "
-// let str3 = "KING"
+
+// console.log("1"+2);
+// console.log(1+"2");
+
+// Way to add string.
+// let str1 = "Let's"
+// let str2 = " Go  "
+// let str3 = "Man"
 
 // let str4 = str1 + str2 + str3
 // console.log(typeof str4);
 // console.log(str4);
 
-console.log("1"+2);
-console.log(1+"2");
 
+// console.log(1 + "2");
+// console.log(1 + 2 + "2"); //If the string is last value then the remaining values will be treated as it is.
+// console.log("1" + 2 + 2); //If first value is string then rest of the values will also be treated as String.
+
+// console.log(+true);
+// console.log(+"");
+
+// let num1 , num2 ,num3
+// num1= num2= num3 = 2+2
+// console.log(num1);
+//  let GameCounter = 100
+//  ++GameCounter ;
+
+//  console.log(GameCounter);
+
+ 
