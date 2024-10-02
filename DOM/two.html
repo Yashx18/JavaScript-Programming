@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Learning</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <!-- This is a comment.(This comment is also counted as a text line.) -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[2].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     const values = (parent.children[i].innerHTML);
+    //     console.log(values);
+    // }
+     
+    parent.children[2].style.color="blue"
+    // console.log(parent.firstElementChild);// To access the first element in a div.
+    // console.log(parent.lastElementChild);// To access the last element in a div.
+    
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);// To find the parent by children.
+    // console.log(dayOne.nextElementSibling);
+    console.log(parent.children[2]);// To print the third value of parent div.
+    console.log("NODES: ", parent.childNodes); // ENTER is being counted as a text element that's why it is showing 9 elements in Nodes list
+    
+
+</script>
+
+</html>

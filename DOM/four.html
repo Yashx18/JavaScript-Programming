@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Learning</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const addLi = document.createElement('li')
+        addLi.innerHTML = langName
+        document.querySelector('.language')
+            .appendChild(addLi)
+    }
+    addLanguage("Python")
+    addLanguage("TypeScript")
+    addLanguage("Java")
+
+    // Both of these functions perform the same action but the one mentioned below is an optimised approach to add element without traversing the whole thing.
+
+    function addOptimisedLang(langName) {
+        const addLi = document.createElement('li')
+        addLi.appendChild(document.createTextNode(langName))// Use appendChild instead of innerHTML.
+        document.querySelector('.language').appendChild(addLi)
+    }
+    addOptimisedLang("Solidity")
+
+    // Edit
+
+    // innerHTML traverses the whole thing then performs the action at last which isn't an optimised way.
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Ruby"
+    const newLi = document.createElement('li')
+    newLi.textContent = "Ruby"
+    secondLang.replaceWith(newLi)
+
+
+    // Edit 2
+
+    const fourthLang = document.querySelector('li:nth-child(4)')
+    const NewLi = document.createElement('li')
+    // fourthLang.outerHTML= '<li>Rust</li>'
+    NewLi.textContent = "Rust"
+    fourthLang.replaceWith(NewLi)
+
+    // Remove
+
+    const LangTwo = document.querySelector('li:nth-child(2)')
+    LangTwo.remove()
+    const Langfour = document.querySelector('li:nth-child(4)')
+    Langfour.remove()
+
+</script>
+
+</htmlww>
