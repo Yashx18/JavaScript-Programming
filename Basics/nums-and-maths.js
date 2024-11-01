@@ -40,3 +40,7 @@ const min = 10
 const max = 20
 console.log(Math.floor(Math.random()*(max-min+1))+min);//Kind of a formula to make the lowest value 10 and highest value less than or equal to 20
 
+
+console.log(Math.round((Math.random()*10+1)));
+
+

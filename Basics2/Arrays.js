@@ -39,15 +39,40 @@ const newArr = new Array(0,10,20,30,40,50,60)
 
 //SLICE & SPLICE.
 
-console.log("A ",newArr);
-const Arr2 = newArr.slice(1,3)
-console.log(Arr2);
-console.log("B ", newArr);
+// console.log("A ",newArr);
+// const Arr2 = newArr.slice(1,3)
+// console.log(Arr2);
+// console.log("B ", newArr);
 
 const Arr3 = newArr.splice(1,3)// Splice method manipulates the original array and makes changes into it .
-console.log(Arr3);
+// console.log(Arr3);
 
-console.log("C ",newArr);
+// console.log("C ",newArr);
 
+// const arr = [1,2,3,4,5,6,7,8,9,10]
+const arr = new Array(1,2,3,4,5,6,7,8,9,10)
+// console.log(arr[4]);
+function toPrintArr() {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);   
+    }
+}
+// console.log(typeof arr);
+// console.log(arr);
 
+arr.push(11, 12)
+arr.pop()
+arr.pop()
+// arr.unshift(12)// it adds value at the first position in which the system has to shift all the values one place.
+// arr.shift()// it removes the value at the first position in which the system has to shift all the values one place.
 
+// console.log(toPrintArr());
+
+// console.log(arr.includes(10));// Returns output in boolean datatype.
+// console.log(arr.indexOf(10));// Returns output in boolean datatype.
+
+// console.log(newArr);
+const arrNew = arr.join()// join method binds the array but converts the array into string.
+ console.log(typeof arrNew);
+
+// The main difference between slice() and splice() is that in slice method the range is not included and slice method doesn' affect the original values of the Array but in the splice() method the range is also printed and it affects the original Array and alters the value used in splice method.
