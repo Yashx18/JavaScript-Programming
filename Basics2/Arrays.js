@@ -73,6 +73,6 @@ arr.pop()
 
 // console.log(newArr);
 const arrNew = arr.join()// join method binds the array but converts the array into string.
- console.log(typeof arrNew);
+//  console.log(typeof arrNew);
 
 // The main difference between slice() and splice() is that in slice method the range is not included and slice method doesn' affect the original values of the Array but in the splice() method the range is also printed and it affects the original Array and alters the value used in splice method.
