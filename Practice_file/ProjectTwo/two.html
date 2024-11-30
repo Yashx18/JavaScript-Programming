@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Project 2</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>YO!! This is where the content goes.</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    // const SayYash = function(){
+    //     console.log("Yash");
+    // }
+    // const ChangeText = function(){
+    //     document.querySelector('h1').innerHTML = "Best JS Series"
+    // }
+
+    // const changeMe = setTimeout(ChangeText, 4000)
+
+    // document.querySelector('#stop').addEventListener('click', function(e){
+    //     clearTimeout(changeMe);
+    //     console.log("STOPPED");
+    // })
+    // document.querySelector('#start').addEventListener('click', function(e){
+    //     setTimeout(changeMe);
+    //     console.log("STARTED");
+    // })
+   
+    // const printHi = setInterval(function(str){
+    //     console.log(str);
+        
+    // }, 1000)
+
+ const stop = setInterval(function(){
+            // console.log("Hi");
+        },1000)
+    document.querySelector('#start').addEventListener('click',function(){
+       
+        console.log("Start"); 
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(stop)
+        console.log("Stop"); 
+    })
+
+
+</script>
+
+</html>

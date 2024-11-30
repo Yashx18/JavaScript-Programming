@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Project</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>YO!! This is where the content goes.</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    const SayYash = function(){
+        console.log("Yash");
+    }
+    const ChangeText = function(){
+        document.querySelector('h1').innerHTML = "Best JS Series"
+    }
+    
+    const changeMe = setTimeout(ChangeText, 5000)
+
+    document.getElementById('stop').addEventListener('click', function(e){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+        
+    })
+</script>
+</html>
