@@ -1,33 +1,44 @@
-const buttons = document.querySelectorAll('.button')
-const body = document.querySelector('body')
+const board = document.querySelector('.container')
+const color = document.querySelectorAll('.color')
 
-// console.log(buttons);
+// console.log(screen.className);
 
-buttons.forEach((btns)=> {
-    console.log(btns);
-    btns.addEventListener('click',(event)=>{
-       
-       
-        const color = event.target.id;
-        console.log(color);
-        if (color === 'grey') {
-            body.style.backgroundColor = color
-        }
-        if (color === 'white') {
-            body.style.backgroundColor = color
-        }
-        if (color === 'blue') {
-            body.style.backgroundColor = color
-        }
-        if (color === 'yellow') {
-            body.style.backgroundColor = color
-        }
-        if (color === 'orange') {
-            body.style.backgroundColor = color
-        }
-        if (color === 'purple') {
-            body.style.backgroundColor = color
-        }
-        
+color.forEach((btns) => {
+    // console.log(btns.id);
+    btns.addEventListener('click', (e) => {
+        const color = e.target.id;
+
+        if (color === 'red') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'blue') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'orange') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'grey') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'yellow') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'green') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'pink') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'purple') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'violet') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } else if (color === 'brown') {
+            //    document.querySelector('.container').style.backgroundColor = color;
+            board.style.backgroundColor = color;
+        } 
     })
-})
+
+});

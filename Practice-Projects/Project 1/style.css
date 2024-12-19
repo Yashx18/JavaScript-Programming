@@ -1,3 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #212121;
+    color: #fff;
+    flex-direction: column;
+}
+.container p{
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.options-box{
+    /* position: absolute; */
+    width: 50%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212121;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+.color{
+    width: 4%;
+    padding: 15px 1px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+
+}
+#pink{
+    background-color: pink;
+
+}
+#violet{
+    background-color: violet;
+
+}
+#brown{
+    background-color: brown;
+
+}
+
+
+
+
+
+
+
+
 html {
     margin: 0;
 }
