@@ -1,0 +1,52 @@
+@font-face {
+    font-family: poppins;
+    src: url(/20_Projects_Folder/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: opensans;
+    src: url(/20_Projects_Folder/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins, opensans;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.flex-dir-column{
+    flex-direction: column;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color: #5a636a;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.banner{
+    margin-bottom: 24px;
+}
+.content{
+    background-color: #0d1f23;
+    padding: 40px;
+    border-radius: 25px;
+    border: 4px solid #043845;
+}
+.clock{
+    background-color: #132e35;
+    padding: 20px 50px;
+    border-radius: 20px;
+    font-size: 26px;
+}
