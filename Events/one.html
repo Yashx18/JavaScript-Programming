@@ -34,12 +34,27 @@
     // document.getElementById('owl').onclick = function(){
     //     alert("Owl clicked")
     // }
-    document.getElementById('owl').addEventListener('click', (event) => {
-        console.log(event.timeStamp)// To print the time at which image was clicked.
-        // console.log(event);
-        
+    // document.getElementById('owl').addEventListener('click', (event) => {
+    // console.log(event.timeStamp)// To print the time at which image was clicked.
+    // console.log(event);
 
-    }, false)// Third parameter is default false.
+
+    // }, false)// Third parameter is default false.
+
+
+    // document.getElementById('google').addEventListener('click',(e)=>{
+    //     e.preventDefault();
+    //     //By using this preventDefault() method, the default nature of an anchor tag is prevented. Event Captured and stored in the "e".
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',(e)=>{
+    //     const owl = document.getElementById('owl');
+    //     owl.remove();
+    //     console.log("owl Clicked");
+
+
+    //     // e.target.remove;
+    // })
 
     /*********** TOPICS TO STUDY ***********/
     // type, timestamp, defaultPrevented
@@ -50,6 +65,26 @@
 
     // attachEvent() used in early times.
     // jQuery - on
+    const Link = document.getElementById('google');
+    Link.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();// This stops any previous event or function appliied like in this case is to remove the <li> on clicking.
+    })
+
+    const UL = document.querySelector('#images')
+    // console.log(UL);
+    UL.addEventListener('click', (e) => {
+        let element = e.target.parentNode;
+        let ID = e.target.id;
+        console.log(ID);
+        if(e.target.tagName === 'IMG'){
+            element.parentNode.removeChild(element);
+        }
+        // element.remove();
+        // Just a different approach to do the same thing as mentioned in line 80 // element.remove();.
+    })
+
+
 </script>
 
 </html>

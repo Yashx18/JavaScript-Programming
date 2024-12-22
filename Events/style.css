@@ -1,0 +1,87 @@
+@font-face {
+    font-family: poppins;
+    src: url(/20_Projects_Folder/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: opensans;
+    src: url(/20_Projects_Folder/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins, opensans;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-dir-column{
+    flex-direction: column;
+}
+body {
+    background-color: #9a8c98;
+    color: aliceblue;
+}
+.container{
+    width: 100%;
+    height: 100vh
+}
+.content{
+    border: 2px solid #22223b;
+    padding: 40px 20px;
+    min-height: 50vh;
+    min-width: 50%;
+    border-radius: 40px;
+    background-color: hsl(238, 43%, 64%);
+}
+.content h1{
+    margin: 40px 0px;
+    color: #343a40;
+}
+#generatedPassword{
+    background-color: #3e407e;
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    min-height: 8vh;
+}
+/* .create{
+    margin: 40px 0px;
+    min-width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #4a4e69;
+    color: #fff;
+} */
+.btns:hover{
+    background-color: hsl(232, 27%, 38%);
+}
+.btns:active{
+    background-color: hsl(233, 42%, 43%);
+}
+.button-box{
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 40px 0px;
+
+}
+.btns{
+    min-width: 44%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #3e467e;
+    color: #fff;
+}
