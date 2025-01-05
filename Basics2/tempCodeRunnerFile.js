@@ -1,0 +1,2 @@
+;
+// console.log(Xuser.greetingTwo());

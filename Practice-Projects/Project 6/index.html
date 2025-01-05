@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>New Number Guessing Game</title>
+</head>
+<body>
+    <div class="container flex-center">
+        <div class="content flex-center flex-dir-column">
+            <h1>Number Guessing Game</h1>
+            <button id="startNew">New Game</button>
+
+            <div class="game-box flex flex-dir-column">
+                <p class="infoText">Try and guess a random number between 1 and 100.</p>
+                <p class="infoText">
+                    You have 10 attempts to guess the right number.
+                </p>
+                <form action="#" class="form flex flex-dir-column">
+                    <label for="guessField">Guess a Number</label>
+                    <input type="text" class="guessField" id="guessField">
+                    <button type="submit" id="submitBtn">Submit Guess</button>
+                </form>
+                <div class="resultBox flex flex-dir-column">
+                    <p>Previous Guesses :<div class="previousGuess flex" id="previousGuess"></div></p>
+                    <p class="remainingGuess flex-center">Guess Remaining :<span class="chances"> 10</span></p>
+                    <p class="HighOrLow flex-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

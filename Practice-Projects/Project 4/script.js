@@ -26,7 +26,7 @@ if (playGame) {
 
 function validateGuess(guess) {
   if (isNaN(guess)) {
-    // alert('Please enter a valid number.')
+    alert('Please enter a valid number.');
   } else if (guess < 1) {
     alert('Please enter a number more than 1.');
   } else if (guess > 100) {
@@ -58,7 +58,7 @@ function checkGuess(guess) {
 }
 
 function displayGuess(guess) {
-  userInput.value = ''; // Can also be called CLEAN UP METHOD because is clear the user input after every turn.
+  userInput.value = ''; // Can also be called CLEAN UP METHOD because it clears the user input after every turn.
   guessSlot.innerHTML += `${guess}\n`; // += is used keep on adding values.
   numGuess++;
   remaining.innerHTML = `${11 - numGuess}`;

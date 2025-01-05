@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML httpRequests</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-weight: 600;
+            color: #2d2d2d;
+            background-color: hsl(160, 100%, 70%);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .btn:hover{
+            border: 2px solid #262626;
+        }
+        #user-pic{
+            border-radius: 50%;
+            height: 30vh;
+        }
+        #box{
+            width: 30%;
+            background-color: rgb(55, 77, 96);
+            border-radius: 30px;
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    <script>
+        const box = document.createElement("div")
+        const btn = document.createElement("button")
+        btn.classList = "btn"
+        btn.id="button"
+        btn.innerText = "Show"
+        box.id='box'
+        box.classList="flex-center"
+        box.appendChild(btn)
+        document.body.appendChild(box)
+        document.body.classList = "flex-center"
+
+
+        const button = document.getElementById('button')
+
+        // To create Card with user 
+        function createCard(){
+            // console.log("button Clicked");
+            const div = document.createElement('div')
+            const followers = document.createElement('p')
+            const pfp = document.createElement('img')
+
+            pfp.src= user.avatar_url
+            pfp.id="user-pic"
+            followers.innerHTML= user.followers
+            div.classList="flex-center"
+
+            div.append(pfp, followers)
+            // div.innerHTML="This is where the info goes"
+            document.getElementById('box').appendChild(div)
+            
+        }
+
+
+        //Event Listener
+        button.addEventListener('click', createCard)
+        let user;
+        const requestURL = 'https://api.github.com/users/hiteshchoudhary'
+        const xhr = new XMLHttpRequest()
+        xhr.open('GET', requestURL)
+        xhr.onreadystatechange = function () {
+            // console.log(xhr.readyState);
+            if (xhr.readyState === 4) {
+                user = JSON.parse(this.responseText);
+                // console.log( typeof user);
+
+                // console.log(user);
+
+            }
+        }
+        // console.log(xhr.readyState);
+
+        xhr.send()
+    </script>
+</body>
+
+</html>
