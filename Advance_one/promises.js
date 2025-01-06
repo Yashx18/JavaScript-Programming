@@ -72,7 +72,7 @@ const promiseFive = new Promise((resolve, reject) => {
         // console.log("promiseFour Resolved");
         let error = true;
         if (!error) {
-            resolve({ username: "Haru", password: "LuvYash" });
+            resolve({ username: "Ken", password: "TheBlade" });
         } else {
             reject('ERROR: JS went wrong!!');
         }
